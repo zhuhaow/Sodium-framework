@@ -127,8 +127,6 @@
 		36A8DD921D28DC4F00B97D7E /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCED1D28D81900B97D7E /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD9A1D292B9A00B97D7E /* SodiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8DD991D292B9A00B97D7E /* SodiumTests.swift */; };
 		36A8DD9C1D292B9A00B97D7E /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DCAB1D28D70D00B97D7E /* Sodium.framework */; };
-		36A8DDA31D293FA400B97D7E /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 36A8DDA21D293FA400B97D7E /* init.c */; };
-		36A8DDA41D293FA400B97D7E /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 36A8DDA21D293FA400B97D7E /* init.c */; };
 		36A8DDAE1D29409800B97D7E /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD461D28DA5A00B97D7E /* Sodium.framework */; };
 		36A8DDB41D2940A300B97D7E /* SodiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A8DD991D292B9A00B97D7E /* SodiumTests.swift */; };
 /* End PBXBuildFile section */
@@ -217,7 +215,6 @@
 		36A8DD971D292B9A00B97D7E /* SodiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SodiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8DD991D292B9A00B97D7E /* SodiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SodiumTests.swift; sourceTree = "<group>"; };
 		36A8DD9B1D292B9A00B97D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36A8DDA21D293FA400B97D7E /* init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = init.c; sourceTree = "<group>"; };
 		36A8DDA91D29409800B97D7E /* SodiumTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SodiumTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8DDAD1D29409800B97D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,7 +283,6 @@
 				36A8DD291D28D8A300B97D7E /* libs */,
 				36A8DD541D28DB9400B97D7E /* Info.plist */,
 				36A8DD551D28DB9400B97D7E /* Sodium.h */,
-				36A8DDA21D293FA400B97D7E /* init.c */,
 			);
 			path = Sodium;
 			sourceTree = "<group>";
@@ -669,7 +665,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A8DDA31D293FA400B97D7E /* init.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,7 +672,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A8DDA41D293FA400B97D7E /* init.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,6 +813,7 @@
 					"$(PROJECT_DIR)/Sodium/libs",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.Sodium;
 				PRODUCT_NAME = Sodium;
 				SKIP_INSTALL = YES;
@@ -844,6 +839,7 @@
 					"$(PROJECT_DIR)/Sodium/libs",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.Sodium;
 				PRODUCT_NAME = Sodium;
 				SKIP_INSTALL = YES;
