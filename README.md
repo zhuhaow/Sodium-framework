@@ -5,7 +5,7 @@ This repository provides the [libsodium](https://github.com/jedisct1/libsodium) 
 
 Binary files are compiled with `dist-build/osx.sh` and `dist-build/ios.sh` in the official [libsodium](https://github.com/jedisct1/libsodium) repository.
 
-There is no wrapper, no Objective-c or swift code, just the bare bones of the C interface.
+There is no wrapper, no Objective-c or Swift helper, just the C interface.
 
 
 ## License
