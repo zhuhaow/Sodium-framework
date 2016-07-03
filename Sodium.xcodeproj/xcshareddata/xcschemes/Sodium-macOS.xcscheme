@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "36A8DD961D292B9A00B97D7E"
+               BuildableName = "SodiumTests.xctest"
+               BlueprintName = "SodiumTests"
+               ReferencedContainer = "container:Sodium.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "36A8DCAA1D28D70D00B97D7E"
+            BuildableName = "Sodium.framework"
+            BlueprintName = "Sodium-macOS"
+            ReferencedContainer = "container:Sodium.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
