@@ -6,6 +6,7 @@
 //  Copyright © 2016 Zhuhao Wang. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "sodium-lib.h"
 
 //! Project version number for Sodium.
