@@ -6,7 +6,7 @@
 //  Copyright © 2016 Zhuhao Wang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "sodium-lib.h"
 
 //! Project version number for Sodium.
 FOUNDATION_EXPORT double SodiumVersionNumber;
