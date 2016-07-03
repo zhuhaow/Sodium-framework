@@ -40,7 +40,7 @@
 		36A8DD0C1D28D81900B97D7E /* crypto_shorthash_siphash24.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD41D28D81900B97D7E /* crypto_shorthash_siphash24.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD0D1D28D81900B97D7E /* crypto_shorthash.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD51D28D81900B97D7E /* crypto_shorthash.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD0E1D28D81900B97D7E /* crypto_sign_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD61D28D81900B97D7E /* crypto_sign_ed25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A8DD0F1D28D81900B97D7E /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD71D28D81900B97D7E /* crypto_sign_edwards25519sha512batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A8DD0F1D28D81900B97D7E /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD71D28D81900B97D7E /* crypto_sign_edwards25519sha512batch.h */; };
 		36A8DD101D28D81900B97D7E /* crypto_sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD81D28D81900B97D7E /* crypto_sign.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD111D28D81900B97D7E /* crypto_stream_aes128ctr.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD91D28D81900B97D7E /* crypto_stream_aes128ctr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD121D28D81900B97D7E /* crypto_stream_chacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCDA1D28D81900B97D7E /* crypto_stream_chacha20.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -102,7 +102,7 @@
 		36A8DD791D28DC4F00B97D7E /* crypto_shorthash_siphash24.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD41D28D81900B97D7E /* crypto_shorthash_siphash24.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD7A1D28DC4F00B97D7E /* crypto_sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD81D28D81900B97D7E /* crypto_sign.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD7B1D28DC4F00B97D7E /* crypto_sign_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD61D28D81900B97D7E /* crypto_sign_ed25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A8DD7C1D28DC4F00B97D7E /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD71D28D81900B97D7E /* crypto_sign_edwards25519sha512batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A8DD7C1D28DC4F00B97D7E /* crypto_sign_edwards25519sha512batch.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD71D28D81900B97D7E /* crypto_sign_edwards25519sha512batch.h */; };
 		36A8DD7D1D28DC4F00B97D7E /* crypto_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCDF1D28D81900B97D7E /* crypto_stream.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD7E1D28DC4F00B97D7E /* crypto_stream_aes128ctr.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCD91D28D81900B97D7E /* crypto_stream_aes128ctr.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD7F1D28DC4F00B97D7E /* crypto_stream_chacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCDA1D28D81900B97D7E /* crypto_stream_chacha20.h */; settings = {ATTRIBUTES = (Public, ); }; };
