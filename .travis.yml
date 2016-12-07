@@ -1,0 +1,15 @@
+language: objective-c
+osx_image: xcode8.1
+script:
+- carthage build --no-skip-current
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive Sodium-framework
+deploy:
+  provider: releases
+  api_key:
+    secure: VcAhNUHSkBVbO9BkSQ00wJPVl+xR7TxvHgK3KuNgwNAGXjRMSmgsZR941Ervikb7i05Sk+pVTASqYFhVQKQIUrWyi3QcExcjVZob/FWyW6CMrCHxjOohPWxYe73kZ1SF1go8nK9pcjzxp1aXBst+sf4ozybfQxVc2Ht4fG+OThuqmY+iNkiZUg8VZZeqAGhZ42oefI7ryIWXYpqNRmxBHrM1eilmJUy1rkNtAZUJAREeS03zcXUYvF+/xEjlY1TUMGt7bpj1xgL6+fxgTE7kYW8wsPWPBYaC07OQemhMhgKlzd3r0KJX0NHKKDXajeIbq+1cv9prUO4rApcecfA6nRqehs8P60cewanPhcpg1wjc3mWvbkoCzaAUyexM3aIF5/0vfXcS7LdkOaSkhXiQMIWFdQl0xcfudoCy1ptbHUDgPKB6CBNop6X/wCa2nvKk+j7cQgB1RKTp69YLICaVJcZoWclVyzGNGcBhLXUI8f4bNkxDmxp4IJd+M0lzBS4IBZ/ouKZT5QCMIRTR6HwWxh1eQDXNT8T3fD93sGSvM12o3tQXkETHZYvtpm0FaXdkGZ/Vx690vIuu0RWgBr2UJt+j/whSdlK27BQWS+kr5LWfdm+ngkviSCzNi7wVTSz4fnI3G4gBchMseB8CmE7sFRC+vHKASO9rgD4cnNeMSdE=
+  file: Sodium-framework.framework.zip
+  on:
+    repo: zhuhaow/Sodium-framework
+    tags: true
